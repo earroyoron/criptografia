@@ -1,16 +1,70 @@
-# Criptografía
+---?image=assets/img/Enigma-1024x768.png
+# Criptografía para @size[3em](desarrolladores)
 
 ---
 
-## Principios básicos
+#### Principios básicos
 
 El tratamiento de la información ha requerido desde antiguo garantizar determinadas propiedades:
+@snap[north-west]
+autenticidad 
+@snapend
+@snap[north]
+confidencialidad
+@snapend
+@snap[west]
+integridad
+@snapend
+@snap[north-east]
+disponibilidad
+@snapend
+@snap[east]
+auditoria
+@snapend
+@snap[shouth]
+no repudio 
+@snapend
+@snap[shouth-east]
+existencia
+@snapend
+
+Note:
+
 - Saber el origen de la información: autenticidad y no repudio.
 - Estar seguros de que no fue modificada: integridad.
 - Proteger el acceso a la información: confidencialidad 
 - Asegurar el momento en que tuvo lugar: existencia.
+---
 
 ### Otro
+
+---
+
+```java
+package com.eurobits.categorizer.entity;
+
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
+import lombok.Data;
+
+@Data
+@JsonInclude(Include.NON_NULL)
+public class AccountHolder {
+
+	 private String bank;
+	 private String branch;
+	 private String controlDigits;
+	 private String accountNumber;
+	 private List<Holder> holders; 	
+	 private SessionUser sessionUser;
+}
+```
+
+@[1]
+@[5-6]
 
 ---
 
