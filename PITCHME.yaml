@@ -5,7 +5,11 @@
 # Theme Setting
 # Doc: https://gitpitch.com/docs/settings/theme
 #
-theme : sky
+theme : template
+theme-headline   : [ "Corisande", "#8329EE", "Bold" ]
+theme-byline   : [ "Corisande", "#1C1C1C", "none" ]
+theme-text       : [ "Arial", "#1C1C1C", "none" ]
+
 
 #
 # Theme-Override Setting
@@ -45,3 +49,5 @@ published : true
 title : "Criptografía para desarrolladores"
 description : "Los trucos y detalles de la criptografía moderna para desarrolladores de software."
 thumbnail : https://gitpitch.com/gpimg/tutorial-thumb.png
+
+mathjax : TeX-MML-AM_HTMLorMML-full

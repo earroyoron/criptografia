@@ -1,129 +1,138 @@
----?image=assets/img/Enigma-1024x768.png
-# Criptografía para @size[3em](desarrolladores)
+---?color=linear-gradient(to top right, #A2A6A8, #2c3e50)
 
----
+## Criptografía para desarrolladores.
+@color[#454D52](by) e@color[#454D52](urobits)
 
-#### Principios básicos
+---?color=linear-gradient(to top right, #A2A6A8, #2c3e50)
 
-El tratamiento de la información ha requerido desde antiguo garantizar determinadas propiedades:
+## Eurobits
+
+Opera la plataforma de agregación de información sobre cuentas e iniciación de pagos lider en Europa, que realiza casi 50 millones de transacciones al mes en Europa y América Latina. 
+
+Colaboramos con varios de los bancos más importantes de Europa, como BBVA, Santander, LBP, Swedbank, La Banque Postale o KBC, y fintechs como Fintonic y Oney Financial Services a crear nuevas fuentes de ingresos y mejorar la experiencia de sus clientes.
+
+---?color=linear-gradient(to top right, #A2A6A8, #2c3e50)
+@title[Title + Concise List]
+
 @snap[north-west]
-autenticidad 
+La Agenda
 @snapend
-@snap[north]
-confidencialidad
+
+@snap[south-west list-content-concise span-100]
+@ol[list-bullets-black](false)
+- Introducción
+- Primitivas criptográficas
+- Normas y estándares
+@olend
+<br><br>
 @snapend
-@snap[west]
-integridad
+
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+## Gestión de Riesgos
+#### la criptografía es una contramedida para reducir o eliminar el riesgo de que se comprometa alguna de las propiedades de la seguridad de la información.
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+## Seguridad de la información
+
+##### @fa[check] Autenticidad
+##### @fa[key] Confidencialidad
+##### @fa[certificate] Integridad
+##### @fa[save] Disponibilidad
+##### @fa[handshake] Auditoria
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+@snap[north-east span-60]
+@box[small bg-gold text-white waved](Confidencialidad)
 @snapend
-@snap[north-east]
-disponibilidad
+
+### Asegurar que la información está protegida y solo puede conocerla quien debe conocerla.
+
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+@snap[north-east span-40]
+@box[small bg-gold text-white waved](Autenticidad)
 @snapend
-@snap[east]
-auditoria
+
+### Asegurar el origen o creador de la información.
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+@snap[north-east span-40]
+@box[small bg-gold text-white waved](Integridad)
 @snapend
-@snap[shouth]
-no repudio 
+
+### Estar seguros de que no ha sido modificada o alterada.
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+@snap[north-east span-40]
+@box[small bg-gold text-white waved](Disponibilidad)
 @snapend
-@snap[shouth-east]
-existencia
+
+### La información debe estar accesible en el momento que es necesaria.
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+@snap[north-east span-40]
+@box[small bg-gold text-white waved](Auditabilidad)
 @snapend
+
+### Trazar el acceso y uso a la información.
+
+---?image=assets/img/legionarios-del-ejercito-romano.jpg&opacity=25
+
+### Antaño...
+
+- Mensajes cifrados de los ejercitos romanos.
+- Sellos papales.
+- Notarios.
 
 Note:
-
-- Saber el origen de la información: autenticidad y no repudio.
-- Estar seguros de que no fue modificada: integridad.
-- Proteger el acceso a la información: confidencialidad 
-- Asegurar el momento en que tuvo lugar: existencia.
----
-
-### Otro
-
----
-
-```java
-package com.eurobits.categorizer.entity;
-
-import java.util.List;
-
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonInclude.Include;
-
-import lombok.Data;
-
-@Data
-@JsonInclude(Include.NON_NULL)
-public class AccountHolder {
-
-	 private String bank;
-	 private String branch;
-	 private String controlDigits;
-	 private String accountNumber;
-	 private List<Holder> holders; 	
-	 private SessionUser sessionUser;
-}
-```
-
-@[1]
-@[5-6]
-
----
 
 Estos requisitos han estado siempre presentes, desde la más remota antigüedad en contratos, planes militares, patentes e inventos,… y se resolvían por diferentes medios:
 - Se lacraban o cifraban los mensajes y documentos para garantizar su confidencialidad.
 - Se emitían sellos y firmas para demostrar su autenticidad y no repudio.
 - Se usaban notarios públicos, para demostrar el momento y añadir una Tercera Parte Confiable.
 
----
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
-La criptografía (del griego κρύπτω krypto, «oculto», y γράφω graphos, «escribir», literalmente «escritura oculta») es el arte o ciencia de cifrar y descifrar información mediante técnicas especiales.
-The reversible transformation of data from the original (the plaintext) to a difficult-to-interpret 
+@snap[north span-90 text-06]
+@quote[La criptografía del griego $κρύπτω$ krypto, «oculto», y $γράφω$ graphos, «escribir», literalmente «escritura oculta» es el arte o ciencia de cifrar y descifrar información mediante técnicas especiales.]
+@snapend
 
----
+### Evolución 
 
+@ul[spaced text-white]
+- Criptografía clásica.
+- Máquinas de cifrado.
+- Evolución teórica: Teoría de la Información y matemática discreta.
+- Criptografía moderna.
+@ulend
+
+Note:
 La criptografía está fundada en la matemática discreta, la teoría de los números, teoría de la información, estadística y probabilidades,…
 Una aproximación histórica a la criptografía permite distinguir tres grandes eras:
 La criptografía clásica o antigua: desde la antigüedad hasta la invención de las primeras máquinas de cifrado (Lorenz, Enigma, Purple,…) en las primeras décadas del S.XX.
 Una etapa intermedia con la criptografía mediante máquinas de cifrado y un importante desarrollo teórico (Shannon, Teoría de la Información,…) 
 La criptografía moderna, con la invención del algoritmo Lucifer (precursor de BES) a mediados de los años 70, la criptografía asimétrica (Diffie-Hellman) en 1976 y el algoritmo RSA en 1978
 
----
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
-La diferencia entre cifrar y encriptar
+## Criptosistema
 
----
+https://es.wikipedia.org/wiki/Criptosistema
 
-Son algoritmos que transforman un contenido de longitud variable en un valor de longitud fija, pero que en el caso de los resúmenes criptográficos aportan las siguientes propiedades:
-Si  h = hash(x)
-El tamaño de h es siempre el mismo.
-El cálculo de hash(x) es rápido
-No es posible conocer o calcular x a partir de h
-Dado h es complejo encontrar otro h’ tal que h=h’ (colisión)
+##### Kerckhoffs's principle
 
----
+A cryptosystem should be secure even if everything about the system, except the key, is public knowledge.
 
-Realiza el proceso de cifrado convirtiendo el texto plano en texto cifrado bit a bit.
-Utilizan claves de tamano pequeño (128 bits).
-La transformación sobre los bits varía.
-RC4 es uno de los cifrados por flujo más utilizado.
-Se utiliza en aplicaciones donde la longitud del texto plano no es conocida (comunicaciones)
-Excepcionalmente más rápido que el cifrado por bloques.
-Basados en One Time Pad (*)
-
----
-
-Cifrado por bloques:
-Realiza el proceso de cifrado sobre bloques de texto plano de longitud fija.
-La transformación sobre los bits no varía; siempre es la misma.
-DES y AES son ejemplos de cifrado por bloques
-
----
-
-Cifrado por bloques:
-Realiza el proceso de cifrado sobre bloques de texto plano de longitud fija.
-La transformación sobre los bits no varía; siempre es la misma.
-DES y AES son ejemplos de cifrado por bloques
-
----
+Note:
+Kerskov
 
 Como hemos comentado los cifrados de flujo se basan en el cifrado de un solo uso (One Time Pad) que son un modelo indescifrable (demostrado matemáticamente)
 En un cifrado de un solo uso la clave es completamente aleatoria y no puede inferirse, adivinarse o deducirse, su tamaño iguala al texto a cifrar y es usada sólo una vez. 
@@ -132,104 +141,416 @@ Esto permite mencionar dos curiosidades:
 La enorme semejanza entre este modelo y el cuento de Borges, “La Biblioteca de Babel” que relata un universo compuesto de una biblioteca de todos los libros posibles.
 El Tesoro de Beale: un supuesto tesoro enterrado en torno a 1830 y cuya ubicación está detallada por un cifrado OTP. A pesar de todos los esfuerzos sigue escondido.
 
----
 
-Uno de los inventos (que no descubrimiento) del S.XX
+---?color=linear-gradient(to top left, #00dffc 50%, white 50.2%)
+
+@snap[north-west span-40]
+# @fa[bezier-curve fa-2x text-black]
+@snapend
+
+@snap[south-east span-70 h2-black]
+## Primitivas
+## criptográficas
+@snapend
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+- Resumen criptográfico
+- Criptografía de clave simétrica
+- Negociación de claves
+- Criptografía de clave asimétrica
+- Esteanografía, curvas elípticas, criptografía cuántica,...
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+### Resumen criptográfico
+
+Son algoritmos que transforman un contenido de longitud variable en un valor de longitud fija, pero que en el caso de los resúmenes criptográficos aportan las siguientes propiedades *matemáticas*:
++++
+
+Si $h = hash(x)$
+
+1. El **tamaño** de $h$ es siempre el mismo.
+2. El cálculo de $h$ es **muy rápido**
+3. **Es irreversible** e imposible conocer o calcular $x$ a partir de $h$
+4. **No colisiona** es decir, dado $h$ es computacionalmente imposible encontrar otro $h’$ tal que $h=h’$
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+@snap[north-west]
+## Usos
+@snapend
+
+@snap[south-west list-content-concise span-100]
+@ol
+- Para no guardar contraseñas
+- Para verificar la integridad de un mensaje
+- Para conseguir el no repudio y autenticar mensajes (usando HMAC)
+- Son parte de la firma electrónica (digital envelope) como explicaremos
+@olend
+<br><br>
+@snapend
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+## HMAC (Keyed MAC)
+
+Se añade una clave al cálculo, de forma que sólo quien la conoce puede haber generado ese HMAC.
+
+$hmac = hash(key,message)$
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+## Aliño 
+
+Se añade un valor público antes del cálculo para evitar ataques de diccionario (e.g. Unix passwd)
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+### Cifrado con clave secreta
+
+- Ambos extremos conocen y comparten una contraseña o palabra de paso.
+
+	- Cifrado de flujo
+	- Cifrado de bloques
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+## Stream Cyphers
+
+- Realiza el proceso de cifrado convirtiendo el texto plano en texto cifrado bit a bit.
+
+- Utilizan claves de tamano pequeño (128 bits).
+
+- RC4 es uno de los cifrados por flujo más utilizado.
+
+- Se utiliza en aplicaciones donde la longitud del texto plano no es conocida (comunicaciones)
+
+- Excepcionalmente más rápido que el cifrado por bloques.
+
+- Basados en One Time Pad (*)
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+### Generación de series pseudoaleatorias
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+### Block Cyphers
+
+Cifrado por bloques:
+Realiza el proceso de cifrado sobre bloques de texto plano de longitud fija.
+La transformación sobre los bits no varía; siempre es la misma.
+DES y AES son ejemplos de cifrado por bloques
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+### Padding y modos
+
+- ECB
+- CBC
+- ...
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+## El problema de la distribución de claves 
+
+Número de secretos a compartir:
+
+$\frac{n(n-1)}{2}$
+
+con $n=25$ el resultado es $300$
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+### Diffie-Hellman
+
+---?image=assets/img/dh.png
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+### Asymetric Cryptography
+
+- Uno de los inventos (que no descubrimiento) del S.XX
+
++++
+
 Es un sistema de cifrado basado en funciones trampa, funciones que son muy sencillas de realizar pero muy complicadas de deshacer: exponenciación modular, factorización de primos,…
++++
 Aunque teoricamente conocidas hasta que Diffie W. y M. Hellman inventaron el algoritmo que permitía el intercambio de claves.
++++
 Posteriormente se han inventado otros algoritmos algunos de los cuales sí que permiten firma o cifrado asimético: RSA, DSS, El Gamal,..
-Es posible afirmar que el cifrado simétrico es el fundamento del mundo electrónico que conocemos porque es la base de la firma electrónica, la autenticación digital, el no repudio, etcétera.
++++
+## La base del comercio electrónico
+Es posible afirmar que **la invención de este modelo matemático es el fundamento del mundo electrónico que conocemos** porque es la base de la firma electrónica, la autenticación digital, el no repudio, etcétera
 
----
+
+---?color=linear-gradient(to top right, #5BE7C4 50%, white 50.2%)
+
+@snap[south-west span-40 h2-black]
+## RSA
+#### Rivest Shamir Adleman
+@snapend
+
+@snap[north-east span-40]
+# @fa[laptop-code fa-2x text-black]
+@snapend
+
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+### RSA (1979)
 
 En el algoritmo RSA tanto la codificación como la decodificación  se llevan a cabo mediante una exponenciación  en aritmética modular 
-C=M^e (mod n)  
-M=C^d (mod n)  siendo C el mensaje cifrado, M el mensaje original, e la clave pública (para codificar) y d la clave privada (para decodificar). Cifrar el mensaje consistirá, pues, en elevarlo a la clave pública y luego quedarse con el resto que sale al dividir por n.  Para que se cumpla esta relación, debe darse la siguiente propiedad:  e*d=1 (mod Ø(n))  donde Ø(n) es la llamada función Totient de Euler. Curiosamente, esta función es muy fácil de calcular si se conocen los factores de n, y muy difícil en el caso contrario. De hecho, si n=p*q, Ø(n)=(p-1)*(q-1). Puesto que la clave pública ha de estar constituida por el par (n,e) para que alguien pueda cifrar un mensaje, si fuera posible factorizar n, el algoritmo RSA estaría sencillamente perdido. 
 
----
+$C=M^e (mod[n])$
+
+$M=C^d (mod[n])$
+
+siendo $C$ el mensaje cifrado, $M$ el mensaje original, $e$ la clave pública (para codificar) y $d$ la clave privada (para decodificar).
+
++++
+
+ Cifrar el mensaje consistirá, pues, en elevarlo a la clave pública y luego quedarse con el resto que sale al dividir por $n$.
+ 
++++
+
+Para que se cumpla esta relación, debe darse la siguiente propiedad:
+ 
+$e*d=1 (mod Ø(n))$
+
+donde $Ø(n)$ es la llamada *Función Totient de Euler.*
+
++++ 
+
+Curiosamente, esta función es *muy fácil de calcular* si se conocen los factores de $n$, y *muy difícil en el caso contrario.*
+
+De hecho, si 
+
+$n=p·q$
+
+$Ø(n)=(p-1)·(q-1)$ 
+
+Puesto que la clave pública ha de estar constituida por el par (n,e) para que alguien pueda cifrar un mensaje, si fuera posible factorizar n, el algoritmo RSA estaría sencillamente perdido. 
+
+
+---?color=linear-gradient(to top right, #5BE7C4 50%, white 50.2%)
+
+@snap[south-west span-40 h2-black]
+### Lo longitud de clave
+@snapend
+
+@snap[north-east span-40]
+# @fa[ruler-horizontal fa-2x text-black]
+@snapend
+
+
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
 También en criptografía, el tamaño importa.
+
 El tamaño de las claves simétricas viene a determinar el tiempo de un ataque de fuerza bruta (probando todas las combinaciones posibles). En un cifrado OTP el tamaño es infinito, pero en un cifrado normal si tenemos una clave de 128 bits, encontraremos el texto original tras probar con 2^64 contraseñas (media).
+
 El tamaño de los resúmenes criptográficos es una muestra de lo complicado que es lograr una colisión o una generación de un Hash a medida.
-El tamaño de las claves simétricas permite medir el esfuerzo en romper la función trampa sin ayuda de la clave por fuerza bruta. Por ejemplo con un RSA de 1024 bits tenemos que hacer una factorización de un número de 309 dígitos en sus dos primos, lo cual sin ayuda del valor de la clave pública es matemáticamente complejo.
 
----
++++ 
 
-Quien quiera divertirse realmente con las matemáticas debe conocer el mundo de la matemática discreta y los grandes números.
-Recomiendo:
-Fundamentos de la Teoría de los Números de I.M. Vinogradov
+El tamaño de las claves simétricas permite medir el esfuerzo en romper la función trampa sin ayuda de la clave por fuerza bruta. 
 
----
+Por ejemplo con un RSA de 1024 bits tenemos que hacer una factorización de un número de 309 dígitos en sus dos primos, lo cual sin ayuda del valor de la clave pública es matemáticamente complejo.
 
-"Códigos secretos" de Simon Singh
-“Applied Cryptography” de Bruce Schneier 
-“Handbook of Applied Cryptography” de A. Menezes
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
----
+- La clave debe ser un valor no reproducible, mejor aleatorio
 
-# Formatos y estándares
+- Deben generarse con procesos de Pseudo-aleatoriedad y algoritmos de generación de claves criptográficas
 
----
+- Los algoritmos no usan directamente la clave sino que la cocinan para generar la entrada al proceso
 
- 	Ahora que parece que tenemos la herramienta básica (la criptografía asimétrica) aparecen los problemas para que se convierta en algo utilizable. Tener presente que hasta ahora hemos presentado un mundo matemático, pero su aplicación práctica es mucho más compleja. Hay que desarrollar las infraestructuras necesarias, 
 
-Los formatos: 
+---?color=linear-gradient(to top right, #5BE7C4 50%, white 50.2%)
+
+@snap[south-west span-40 h2-black]
+### Fun
+@snapend
+
+@snap[north-east span-40]
+# @fa[smile-wink fa-2x text-black]
+@snapend
+
+
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+- Fundamentos de la Teoría de los Números - _I.M. Vinogradov_
+- Los Códigos secretos - _Simon Singh_
+- Applied Cryptography - _Bruce Schneier_ 
+- Handbook of Applied Cryptography - _A. Menezes_
+- The Codebreakers - _David Kahn_
+- Cryptonomicon - _Neal Stephenson_
+- Sneakers _Phil Alden Robinson_ (película)
+
+---?color=linear-gradient(to top left, #00dffc 50%, white 50.2%)
+
+@snap[north-west span-40]
+# @fa[book fa-2x text-black]
+@snapend
+
+@snap[south-east span-40 h2-black]
+### Formatos
+### Estándares 
+### Normas
+@snapend
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+Ahora que parece que tenemos la herramienta básica (la criptografía) aparecen los problemas para que se convierta en algo utilizable. 
+	 
+Tener presente que hasta ahora hemos presentado un mundo matemático, pero su aplicación práctica es mucho más compleja. 
+
+### Hay que desarrollar las infraestructuras necesarias.
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+## Los formatos: 
+
 ¿el formato que usa Bob es el que yo entiendo?
-La confianza: 
-¿porqué confía Alice en Bob? ¿es esa clave pública la de Bob? ¿es Bob?
-La Ley
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+## La confianza: 
+
+¿porqué confía Alice en Bob? 
+
+¿es esa clave pública la de Bob? 
+
+¿es realmente Bob?
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+## Legislación
+
 ¿qué valor legal tiene la firma electrónica?
 
----
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+
+## Estándares
+
+Un estándar es una especificación que regula la realización de ciertos procesos o la fabricación de componentes para garantizar la interoperabilidad.
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+##  Normas
+
+Las normas son documentos técnico-legales con las siguientes características:
+
+- Contienen especificaciones técnicas de aplicación voluntaria. 
+- Son elaborados por consenso y están basados en los resultados de la experiencia y el desarrollo tecnológico. 
+- Son aprobados por un organismo nacional, regional o internacional de normalización reconocido.
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+##  Normas
+
+- Son públicas (aunque pueden no ser gratuitas).
+- Ofrecen un lenguaje de punto común de comunicación entre las empresas, la Administración pública, los usuarios y consumidores. 
+- Las normas establecen un equilibrio socioeconómico entre los distintos agentes que participan en las transacciones comerciales, base de cualquier economía de mercado, y son un patrón necesario de confianza entre cliente y proveedor.
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+## Entonces...
+
+El mundo de la firma electrónica está inundado de estándares y  normas.
+Puesto que se pretende que entidades, personas, sistemas, etc. diferentes trabajen de igual forma, entiendan la misma información y representen lo mismo de la misma forma todo está estandarizado
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+### ...¡todo está estandarizado!
+
+- La forma de generar datos como claves, certificados, etc.
+- La forma de pedir cualquier cosa y como entender la respuesta.
+- La forma de representar los datos.
+- La forma de intercambiar los datos.
+- La forma de procesar esos datos.
+- etcétera
+
+# TODO
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
 La firma electrónica es uno de los ejemplos más claros de este problema: tenemos una serie de datos, estructuras de datos, que debemos intercambiar entre dos entidades.
-Ambas entidades pueden estar usando sistemas diferentes y lenguajes diferentes. 
-Se necesita representar esa estructura de datos en un formato común:
-Un formato común para representar los datos y estructuras
-Una reglas comunes para transmitirnos esta información.
-Los sistemas podrán luego traducir estos formatos a sus necesidades propias.
+- Ambas entidades pueden estar usando sistemas diferentes y lenguajes diferentes. 
+- Se necesita representar esa estructura de datos en un formato común:
+- Un formato común para representar los datos y estructuras
+- Una reglas comunes para transmitirnos esta información.
+- Los sistemas podrán luego traducir estos formatos a sus necesidades propias.
+
+
+---?color=linear-gradient(to top right, #5BE7C4 50%, white 50.2%)
+
+@snap[south-west span-40 h2-black]
+## ASN.1
+#### Abstract Syntax Notation One
+@snapend
+
+@snap[north-east span-40]
+# @fa[laptop-code fa-2x text-black]
+@snapend
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+# ASN.1
+
+- Una norma para representar datos independientemente de la máquina que se esté usando y sus formas de representación internas. Es un protocolo de nivel de presentación en el modelo OSI. [Wikipedia]
+
+- Este estándar no define cómo se han de codificar esos datos, sino que es una sintaxis abstracta para indicar el significado de los datos.
 
 ---
-#ASN.1
-
-Abstract Syntax Notation One(notación sintáctica abstracta 1, ASN.1) es una norma para representar datos independientemente de la máquina que se esté usando y sus formas de representación internas. Es un protocolo de nivel de presentación en el modelo OSI. [Wikipedia]
-Este estándar no define cómo se han de codificar esos datos, sino que es una sintaxis abstracta para indicar el significado de los datos.
-
----
-Las codificaciones: DER, BER, CER,…
+## DER, BER, CER,…
 Como se ha indicado, ASN.1 no define cómo se han de codificar los datos.
 La estructura una vez definida en un lenguaje común, ASN.1, debe ser codificada para poder ser almacenada y transmitida. Esto se realiza mediante:
-DER (Distinguished Encoding Rules)
-BER (Basic Encoding Rules)
-CER (Canonical Encoding Rules)
-PER (Packed Encoding Rules)
-Podemos decir que DER,BER,… es la forma de codificar en un array de bytes la estructura ASN.1
+
+- DER (Distinguished Encoding Rules)
+- BER (Basic Encoding Rules)
+- CER (Canonical Encoding Rules)
+- PER (Packed Encoding Rules)
+
+@css[text-03](Podemos decir que DER,BER,… es la forma de codificar en un array de bytes la estructura ASN.1)
 
 ---
 
 Ejemplo
-Información a intercambiar, un atributo X.500
-cn=www.freesoft.org 
-Mis datos en un HashMap de Java podrían ser:
-HashMap commonName = new HashMap ();
-commonName.put (“CN”,” www.freesoft.org”);
 Pero la forma común de representarlo es la estructura en ASN.1 que define el estándar LDAP para esta información:
-LDAPString ::= OCTET STRING
-AttributeDescription ::= LDAPString
-AttributeValueAssertion ::= SEQUENCE {
-	attributeDesc AttributeDescription, 
-	assertionValue AssertionValue } 
-AssertionValue ::= OCTET STRING 
+
+	LDAPString ::= OCTET STRING
+	AttributeDescription ::= LDAPString
+	AttributeValueAssertion ::= SEQUENCE {
+		attributeDesc AttributeDescription, 
+		assertionValue AssertionValue } 
+	AssertionValue ::= OCTET STRING 
+
 Usaría una librería ASN.1 para crear esta estructura y luego codificarla:
-Por ejemplo…
+
+
+---?color=linear-gradient(to top right, #5BE7C4 50%, white 50.2%)
+
+@snap[south-west span-40 h2-black]
+## Base64
+@snapend
+
+@snap[north-east span-40]
+# @fa[laptop-code fa-2x text-black]
+@snapend
 
 ---
 
-Base 64
+## Base 64
 Los datos en DER/BER son un array de bytes y no pueden usarse como cadenas de texto lo que impide imprimirlos, o representarlos dentro del texto de un correo electrónico (de hecho Base64 fue desarrollado para ser utilizado con S/MIME) o incorporar estos datos binarios a estructuras XML.
 Para ello tenemos la codificación en Base64. 
 Base64 codifica los archivos en formato de texto ASCII
-Base 64
++++
+### Base 64
 Los 3 bytes de entrada (3x8bit) se tratan como un bloque que se divide en 4 bloques de 6 bits que se codifican cada uno en un carácter imprimible.
 ¿qué cosas me voy a encontrar en ASN.1?
 Todo: los objetos relacionados con la firma electrónica se definen con su estructura ASN.1 codificados generalmente en DER o CER.
@@ -245,9 +566,21 @@ Más sobre ASN.1 en
 Más sobre Base 64 en
 http://www.aardwulf.com/tutor/base64/base64.pdf
 
+
+---?color=linear-gradient(to top right, #5BE7C4 50%, white 50.2%)
+
+@snap[south-west span-40 h2-black]
+## XAdES
+#### XML Advanced Encription Standard
+@snapend
+
+@snap[north-east span-40]
+# @fa[laptop-code fa-2x text-black]
+@snapend
+
 ---
 
-<?xml ?>
+## <?xml ?>
 Es un meta-lenguage: una manera de definir lenguajes para diferentes necesidades 
 Nos lo encontraremos como formato en firma electrónica para intercambiar datos:
 XMLDsig y XAdES
@@ -256,49 +589,36 @@ SOAP
 SAML
 DSS
 
----
+---?color=linear-gradient(to top right, #5BE7C4 50%, white 50.2%)
 
-Estándares y normas
-Estándares y normas
-Un estándar es una especificación que regula la realización de ciertos procesos o la fabricación de componentes para garantizar la interoperabilidad.
-Las normas son documentos técnico-legales con las siguientes características:
-Contienen especificaciones técnicas de aplicación voluntaria. Son elaborados por consenso y están basados en los resultados de la experiencia y el desarrollo tecnológico. Son aprobados por un organismo nacional, regional o internacional de normalización reconocido.
+@snap[south-west span-40 h2-black]
+## OASIS WS-Security
+@snapend
 
----
-
-Son públicas (aunque pueden no ser gratuitas).
-Las normas ofrecen un lenguaje de punto común de comunicación entre las empresas, la Administración pública, los usuarios y consumidores. Las normas establecen un equilibrio socioeconómico entre los distintos agentes que participan en las transacciones comerciales, base de cualquier economía de mercado, y son un patrón necesario de confianza entre cliente y proveedor.
-¿cómo resuelvo el problema de los formatos?
-El mundo de la firma electrónica está inundado de estándares y  normas.
-Puesto que se pretende que entidades, personas, sistemas, etc. diferentes trabajen de igual forma, entiendan la misma información y representen lo mismo de la misma forma todo está estandarizado:
- La forma de generar datos como claves, certificados, etc.
- La forma de pedir cualquier cosa y como entender la respuesta.
- La forma de representar los datos.
- La forma de intercambiar los datos.
- La forma de procesar esos datos.
- ….
+@snap[north-east span-40]
+# @fa[laptop-code fa-2x text-black]
+@snapend
 
 ---
 
-JWT JWS
+Estandarización
 
----
+Algunos estándares (10 años atrás)
 
-OAuth2
+@css[text-02](CAdES CMS Advanced Electronic Signatures. ETSI TS 101 733 CAdES version 1.7.4 from Jul, 2008, XAdES XML Advanced Electronic Signatures. ETSI TS 101 903 XAdES version 1.4.1 from 2009-06-15, PAdES PDF Advanced Electronic Signatures. ETSI TS 102778, RFC 2560 “Online Certificate Status Protocol – OCSP”, RFC 3126 “Electronic Signature Formats for long term electronic signatures”, RFC 2630 ”Cryptographic Message Syntax”,RFC 2634 ”Enhanced Security Services for S/MIME”, RFC 5126 “CMS Advanced Electronic Signatures CAdES”,RFC 3280 ”Certificate and Certificate Revocation List CRL Profile”,RFC 3275  “Extensible Markup Language XML-Signature Syntax and Processing ”, RFC 2797  “Certificate Management Messages over CMS”,RFC 2585  “Operational Protocols: FTP and HTTP”, RFC 3161  “Time-Stamp Protocol TSP”, RFC 3029 “Data Validation and Certification Server Protocols”, RFC 3852  “Cryptographic Message Syntax” deja obsoletos los RFC3369, RFC 3211, RFC 2630, RFC 2315-PKCS #7 version 1.5-, RFC 4853 - Actualización Marzo 2008 “Cryptographic Message Syntax – Multiple Signer Clarification”, CWA 15579  E-invoices and digital signatures, ETSI TS 102 042 Policy requirements for CA issuing PKC, ETSI TS 102 023 Policy Requirements for Time Stamping Authorities Certificates for Electronic Signatures – Part 1: System Security Requirements, ETSI TS 102 231 Provision of harmonized Trust Service Provider status information TSL, ETSI TS 102 280 X.509 V.3 Certificate Profile for Certificates Issued to Natural Persons, ETSI TS 102 158 Policy requirements for Certification Service Providers issuing attribute certificates usable with Qualified certificates, ETSI TS 101 861 V1.2.1  Time stamping profile, CEN / ISSS CWA 14167-2 Cryptographic module for CSP signing operations with backup – Protection profile – CMCSOB PP, CEN / ISSS CWA 14167-3 Cryptographic module for CSP key generation services protection profile CMCKG-PP, CEN / ISSS CWA 14167-4 Cryptographic module for CSP signing operations – Protection profile – CMCSO PP, CEN / ISSS CWA 14169 Secure signature-creation devices “EAL 4+”, CEN / ISSS CWA 14170 Security requirements for signature creation applications, CEN / ISSS CWA 14171 General Guidelines for Electronic Signature Verification, CEN / ISSS CWA 14172 EESSI Conformity Assessment Guidance 8 parts, CEN / ISSS CWA 14355 Guidelines for the implementation of Secure Signature-Creation Devices, CEN / ISSS CWA 14365-1 Guide on the Use of Electronic Signatures – Part 1: Legal and Technical Aspects, CEN / ISSS CWA 14365-2 Guide on the Use of Electronic Signatures – Part 2: Protection Profile for Software Signature Creation Devices, CEN / ISSS CWA 14167-1 Security Requirements for Trustworthy Systems Managing, CEN / ISSS CWA 14890-1 Application Interface for smart cards used as Secure Signature Creation Devices – Part 1: Basic requirements, CEN / ISSS CWA 14890-2 Application Interface for smart cards used as Secure Signature Creation Devices – Part 2: Additional Services, TR 102 047 International Harmonization of Electronic Signature Formats FIPS PUB 180-1 Secure Hash Standard, ISO 32000,……..)
 
----
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
-TLS
+### Terceras Partes de Confianza
 
----
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
-Estandarización 
-Algunos estándares:
-CAdES (CMS Advanced Electronic Signatures). ETSI TS 101 733 CAdES version 1.7.4 from Jul, 2008, XAdES (XML Advanced Electronic Signatures). ETSI TS 101 903 XAdES version 1.4.1 from 2009-06-15, PAdES (PDF Advanced Electronic Signatures). ETSI TS 102778, RFC 2560 “Online Certificate Status Protocol – OCSP”, RFC 3126 “Electronic Signature Formats for long term electronic signatures”, RFC 2630 ”Cryptographic Message Syntax”,RFC 2634 ”Enhanced Security Services for S/MIME”, RFC 5126 “CMS Advanced Electronic Signatures (CAdES)”,RFC 3280 ”Certificate and Certificate Revocation List (CRL) Profile”,RFC 3275  “(Extensible Markup Language) XML-Signature Syntax and Processing ”, RFC 2797  “Certificate Management Messages over CMS”,RFC 2585  “Operational Protocols: FTP and HTTP”, RFC 3161  “Time-Stamp Protocol (TSP)”, RFC 3029 “Data Validation and Certification Server Protocols”, RFC 3852  “Cryptographic Message Syntax” (deja obsoletos los RFC3369, RFC 3211, RFC 2630, RFC 2315-PKCS #7 version 1.5-), RFC 4853 - (Actualización Marzo 2008) “Cryptographic Message Syntax – Multiple Signer Clarification”, CWA 15579  E-invoices and digital signatures, ETSI TS 102 042 Policy requirements for CA issuing PKC, ETSI TS 102 023 Policy Requirements for Time Stamping Authorities Certificates for Electronic Signatures – Part 1: System Security Requirements, ETSI TS 102 231 Provision of harmonized Trust Service Provider status information (TSL), ETSI TS 102 280 X.509 V.3 Certificate Profile for Certificates Issued to Natural Persons, ETSI TS 102 158 Policy requirements for Certification Service Providers issuing attribute certificates usable with Qualified certificates, ETSI TS 101 861 V1.2.1  Time stamping profile, CEN / ISSS CWA 14167-2 Cryptographic module for CSP signing operations with backup – Protection profile – CMCSOB PP, CEN / ISSS CWA 14167-3 Cryptographic module for CSP key generation services protection profile CMCKG-PP, CEN / ISSS CWA 14167-4 Cryptographic module for CSP signing operations – Protection profile – CMCSO PP, CEN / ISSS CWA 14169 Secure signature-creation devices “EAL 4+”, CEN / ISSS CWA 14170 Security requirements for signature creation applications, CEN / ISSS CWA 14171 General Guidelines for Electronic Signature Verification, CEN / ISSS CWA 14172 EESSI Conformity Assessment Guidance (8 parts), CEN / ISSS CWA 14355 Guidelines for the implementation of Secure Signature-Creation Devices, CEN / ISSS CWA 14365-1 Guide on the Use of Electronic Signatures – Part 1: Legal and Technical Aspects, CEN / ISSS CWA 14365-2 Guide on the Use of Electronic Signatures – Part 2: Protection Profile for Software Signature Creation Devices, CEN / ISSS CWA 14167-1 Security Requirements for Trustworthy Systems Managing, CEN / ISSS CWA 14890-1 Application Interface for smart cards used as Secure Signature Creation Devices – Part 1: Basic requirements, CEN / ISSS CWA 14890-2 Application Interface for smart cards used as Secure Signature Creation Devices – Part 2: Additional Services, TR 102 047 (International Harmonization of Electronic Signature Formats) FIPS PUB 180-1 (Secure Hash Standard), ISO 32000,……..
-Terceras Partes de Confianza
-“El mayor despeñadero, la confianza” Francisco de Quevedo 
+@quote[“El mayor despeñadero, la confianza”](Francisco de Quevedo)
+
 Para resolver el problema de la confianza la firma electrónica se basa en las Terceras Partes de Confianza.
 Una TPC es una Autoridad de Certificación, Sellado, Validación, etcétera y que, como su nombre indica, actúa como tercera parte en la que ambos agentes confían.
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
 La base para trabajar y gestionar esta confianza son los Certificados Electrónicos.
 Un certificado digital es un documento digital mediante el cual un tercero confiable (una Autoridad de Certificación) garantiza la vinculación entre la identidad de un sujeto o entidad y su clave pública
@@ -369,6 +689,20 @@ Proveedores criptográficos
 Los proveedores deben estar instalados de forma estática (java.security) o pueden instanciarse dinámicamente mediante métodos del propio Provider.
 Ejemplo IAIK.addAsJDK14Provider();
 
+
+---?color=linear-gradient(to top right, #5BE7C4 50%, white 50.2%)
+
+@snap[south-west span-40 h2-black]
+## PCKS
+#### Public Key Cryptographic Standards
+@snapend
+
+@snap[north-east span-40]
+# @fa[laptop-code fa-2x text-black]
+@snapend
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
 Uso de un proveedor para generar resúmenes:
 MessageDigest md =  MessageDigest.getInstance(String algorithm, String provider);
 Otras APIs :: JSR105 & JSR106
@@ -394,15 +728,23 @@ Habitualmente, una firma en CMS puede representarse en su modalidad Attached o D
 CMS permite incluir diferentes firmantes en la firma bajo dos modalidades: encadenada y mancomunada. PKCS#7 no permite esta estructura de firma.
 La firma propiamente dicha es un compendio de datos formales referidos al tipo de firma (algoritmos, versiones, ...) así como de atributos firmados (signed) y no firmados (unsigned) bajo una estructura dada.
 
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
 Attached versus Detached
+
 Firma de Archivos Completos  Firma separada
+
 Dos ficheros que gestionar
+
 Mantenerlos enlazados de alguna manera
+
 Los dos son necesarios para la verificación
+
 Las aplicaciones pueden acceder a los datos sin verificar la firma
-Formatos básicos de firma 
-Formatos básicos de firma 
-Formatos básicos de firma 
+
+Formatos básicos de firma
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
 Existen diferentes problemas asociados a la perdurabilidad de las firmas realizadas a lo largo del tiempo, siendo el más importante el de la validación de las firmas a largo plazo.
 En la actualidad se realizan la mayoría de las firmas realizando únicamente una comprobación de la CRL/OCSP en el momento de realizar la firma, pero no se guarda evidencia de la misma.
@@ -426,11 +768,79 @@ Desarrollar “un protocolo para un Web Service de creación de firmas digitales
 Desarrollar “un protocolo para un Web Service de verificación de firmas digitales que permita verificar firmas en relación a un conjunto de políticas dado”.
 Desarrollar “un protocolo basado en XML para emitir Sellos de Tiempo criptográficos”. 
 
+---?color=linear-gradient(to top right, #5BE7C4 50%, white 50.2%)
 
-SSL
-SSL Handshake
-Configuración SSL en WAS 61
-El entorno legal
+@snap[south-west span-40 h2-black]
+## OAuth2
+@snapend
+
+@snap[north-east span-40]
+# @fa[laptop-code fa-2x text-black]
+@snapend
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+#### OAuth2 Grant Types
+
+
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+## openId connect SSO
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+@title[JWT y otros]
+
+@snap[north-west]
+## JWT y Cia.
+@snapend
+
+@snap[south-west list-content-concise span-100]
+@ul[list-bullets-black]
+- *JWT*
+- *JWK*
+- *JWE*
+- *JOSE*
+@ulend
+<br><br>
+@snapend
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+# TLS
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+TLS permite cifrar _el canal_ en un proceso -complejo- de negociación de clave de sesión.
+En este proceso se puede incorporar la identificación del otro lado mediante un certificado confiado.
+- Es un protocolo de la capa de transporte
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+### TLS Handshake
+
+Las etapas:
+
+https://www.acunetix.com/blog/articles/establishing-tls-ssl-connection-part-5/
+
+Para desarrolladores:
+
+-
+-
+
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+
+In TLS 1.2 and earlier, the TLS handshake needed two round trips to be completed. The first round trip was the exchange of hellos and the second one was the key exchange and changing the cipher spec. In TLS 1.3, this process is streamlined and only one round trip is needed. TLS 1.3 also no longer supports TLS compression.
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+# El entorno legal
+
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 La Firma Electrónica
 Artilugio legal que busca la equivalencia de la firma manuscrita
 Normativa Básica:
@@ -439,6 +849,7 @@ Ley 59/2003, de 19 de diciembre, de firma electrónica.
 Tipos de Firma Electrónica
 Simple
 “… conjunto de datos … que pueden ser utilizados como medio de identificación del firmante” (Art 3.1 Ley 59/2003)
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
 Avanzada
 Simple + “y detectar cualquier cambio ulterior de los datos firmados, que está vinculada al firmante de manera única y a los datos a que se refiere y que ha sido creada por medios que el firmante puede mantener bajo su exclusivo control” (Art 3.2 Ley 59/2003)
@@ -500,53 +911,25 @@ PLATINO (ASF)
 ZAIN (IZENPE)
 CATCert (SafeLayer)
 
+---
+
+## Blockchain
 
 ---
-## Add Some Slide Candy
 
-![](assets/img/presentation.png)
-
----?color=linear-gradient(180deg, white 75%, black 25%)
-@title[Customize Slide Layout]
-
-@snap[west span-50]
-## Customize the Layout
-@snapend
-
-@snap[east span-50]
-![](assets/img/presentation.png)
-@snapend
-
-@snap[south span-100 text-white]
-Snap Layouts let you create custom slide designs directly within your markdown.
-@snapend
+## Timestamps
 
 ---?color=linear-gradient(90deg, #E27924 65%, white 35%)
-@title[Add A Little Imagination]
 
-@snap[north-west h4-white]
-#### And start presenting...
-@snapend
+## Recomendaciones
 
-@snap[west span-55]
-@ul[spaced text-white]
-- You will be amazed
-- What you can achieve
-- *With a little imagination...*
-- And **GitPitch Markdown**
-@ulend
-@snapend
+La criptografía y el criptoanálisis modernos tienen una enorme y compleja base matemática al alcance de realmente pocas personas.
+ 
+- No implementes la criptografía.
+- Usa siempre los estandares.
+- No uses seguridad por oscuridad: lo complejo no es seguro.
+- Cuidado con los canales encubiertos.
+- El eslabón más debil son las personas.
+- La criptografía es una contramedida frente a riesgos así que ¡piensa en ACIDA!
+- Usa siempre TLS.
 
-@snap[east span-45]
-@img[shadow](assets/img/conference.png)
-@snapend
-
----?image=assets/img/presenter.jpg
-
-@snap[north span-100 h2-white]
-## Now It's Your Turn
-@snapend
-
-@snap[south span-100 text-06]
-[Click here to jump straight into the interactive feature guides in the GitPitch Docs @fa[external-link]](https://gitpitch.com/docs/getting-started/tutorial/)
-@snapend
