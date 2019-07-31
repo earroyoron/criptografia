@@ -3,13 +3,12 @@
 ## Criptografía para desarrolladores.
 @color[#454D52](by) e@color[#454D52](urobits)
 
----?color=linear-gradient(to top right, #A2A6A8, #2c3e50)
-
+---?image=assets/img/eurobits.jpg&opacity=45
 ## Eurobits
 
-Opera la plataforma de agregación de información sobre cuentas e iniciación de pagos lider en Europa, que realiza casi 50 millones de transacciones al mes en Europa y América Latina. 
-
-Colaboramos con varios de los bancos más importantes de Europa, como BBVA, Santander, LBP, Swedbank, La Banque Postale o KBC, y fintechs como Fintonic y Oney Financial Services a crear nuevas fuentes de ingresos y mejorar la experiencia de sus clientes.
+- Hemos desarrollado y operamos la plataforma de agregación de información sobre cuentas lider en Europa.
+- Realizamos más de @css[bold](50 millones de transacciones al mes) en Europa y América Latina. 
+- Entre nuestros clientes podemos mencionar a los bancos más importantes de Europa, como BBVA, Santander, LBP, Swedbank, La Banque Postale o KBC, y fintechs como Fintonic y Oney Financial Services.
 
 ---?color=linear-gradient(to top right, #A2A6A8, #2c3e50)
 @title[Title + Concise List]
@@ -31,17 +30,24 @@ La Agenda
 ---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
 ## Gestión de Riesgos
-#### la criptografía es una contramedida para reducir o eliminar el riesgo de que se comprometa alguna de las propiedades de la seguridad de la información.
+#### La criptografía es una contramedida para proteger las propiedades de la seguridad de la información.
 
 ---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
 ## Seguridad de la información
 
-##### @fa[check] Autenticidad
+##### @fa[check] Autenticación
 ##### @fa[key] Confidencialidad
 ##### @fa[certificate] Integridad
 ##### @fa[save] Disponibilidad
 ##### @fa[handshake] Auditoria
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+@snap[north-east span-40]
+@box[small bg-gold text-white waved](Autenticación)
+@snapend
+
+### Asegurar que podemos identificar a quien accede y proteger que sólo acceda quien debe acceder.
 
 ---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
@@ -49,16 +55,7 @@ La Agenda
 @box[small bg-gold text-white waved](Confidencialidad)
 @snapend
 
-### Asegurar que la información está protegida y solo puede conocerla quien debe conocerla.
-
-
----?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
-
-@snap[north-east span-40]
-@box[small bg-gold text-white waved](Autenticidad)
-@snapend
-
-### Asegurar el origen o creador de la información.
+### Asegurar que la información está protegida en transito o almacenamiento.
 
 ---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
@@ -66,7 +63,7 @@ La Agenda
 @box[small bg-gold text-white waved](Integridad)
 @snapend
 
-### Estar seguros de que no ha sido modificada o alterada.
+### Estar seguros de que la información es veraz y no es modificada o alterada.
 
 ---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
@@ -74,7 +71,7 @@ La Agenda
 @box[small bg-gold text-white waved](Disponibilidad)
 @snapend
 
-### La información debe estar accesible en el momento que es necesaria.
+### Asegurar que la información está disponible siempre que es necesaria.
 
 ---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
@@ -101,7 +98,7 @@ Estos requisitos han estado siempre presentes, desde la más remota antigüedad 
 
 ---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
-@snap[north span-90 text-06]
+@snap[north span-100 text-05]
 @quote[La criptografía del griego $κρύπτω$ krypto, «oculto», y $γράφω$ graphos, «escribir», literalmente «escritura oculta» es el arte o ciencia de cifrar y descifrar información mediante técnicas especiales.]
 @snapend
 
@@ -121,18 +118,63 @@ La criptografía clásica o antigua: desde la antigüedad hasta la invención de
 Una etapa intermedia con la criptografía mediante máquinas de cifrado y un importante desarrollo teórico (Shannon, Teoría de la Información,…) 
 La criptografía moderna, con la invención del algoritmo Lucifer (precursor de BES) a mediados de los años 70, la criptografía asimétrica (Diffie-Hellman) en 1976 y el algoritmo RSA en 1978
 
+---?color=linear-gradient(to top right, #5BE7C4 50%, white 50.2%)
+
+@snap[south-west span-50 h2-black]
+### Criptografía 
+### clásica
+@snapend
+
+@snap[north-east span-40]
+# @fa[laptop-code fa-2x text-black]
+@snapend
+
 ---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
-## Criptosistema
+## Cesar
 
-https://es.wikipedia.org/wiki/Criptosistema
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
-##### Kerckhoffs's principle
+## Vigenere
 
-A cryptosystem should be secure even if everything about the system, except the key, is public knowledge.
+
+---?color=linear-gradient(to top right, #5BE7C4 50%, white 50.2%)
+
+@snap[south-west span-40 h2-black]
+### Máquinas
+@snapend
+
+@snap[north-east span-40]
+# @fa[laptop-code fa-2x text-black]
+@snapend
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+## Purple
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+## Enigma
+
+---?color=linear-gradient(to top right, #5BE7C4 50%, white 50.2%)
+
+@snap[south-west span-40 h2-black]
+### Avances teóricos
+#### Siglo XX
+@snapend
+
+@snap[north-east span-40]
+# @fa[laptop-code fa-2x text-black]
+@snapend
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
+
+## Kerckhoffs
+
+A cryptosystem should be secure even if everything about the system, except the key, is public knowledge.(1883)
 
 Note:
-Kerskov
+Kerskov (1883)
 
 Como hemos comentado los cifrados de flujo se basan en el cifrado de un solo uso (One Time Pad) que son un modelo indescifrable (demostrado matemáticamente)
 En un cifrado de un solo uso la clave es completamente aleatoria y no puede inferirse, adivinarse o deducirse, su tamaño iguala al texto a cifrar y es usada sólo una vez. 
@@ -141,14 +183,33 @@ Esto permite mencionar dos curiosidades:
 La enorme semejanza entre este modelo y el cuento de Borges, “La Biblioteca de Babel” que relata un universo compuesto de una biblioteca de todos los libros posibles.
 El Tesoro de Beale: un supuesto tesoro enterrado en torno a 1830 y cuya ubicación está detallada por un cifrado OTP. A pesar de todos los esfuerzos sigue escondido.
 
+---?color=linear-gradient(to top left, #00dffc 50%, white 50.2%)
+
+## Shannon
+
+La Teoría de la Información de Claude E. Shannon, es sin duda uno de los avances científicos más importantes del siglo XX.
+
 
 ---?color=linear-gradient(to top left, #00dffc 50%, white 50.2%)
+
+# Alan Turing
+
+Uno de los padres de la computación.
+
+---?color=linear-gradient(to top left, #00dffc 50%, white 50.2%)
+
+### Whitfield Diffie y Martin Hellman
+
+Invención del primer modelo de función trampa y su aplicación a la negociación de claves sobre canales inseguros.
+
+
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
 @snap[north-west span-40]
 # @fa[bezier-curve fa-2x text-black]
 @snapend
 
-@snap[south-east span-70 h2-black]
+@snap[south-east span-90 h2-black]
 ## Primitivas
 ## criptográficas
 @snapend
@@ -174,6 +235,12 @@ Si $h = hash(x)$
 2. El cálculo de $h$ es **muy rápido**
 3. **Es irreversible** e imposible conocer o calcular $x$ a partir de $h$
 4. **No colisiona** es decir, dado $h$ es computacionalmente imposible encontrar otro $h’$ tal que $h=h’$
+
++++
+
+```
+openssl digest -sha1 
+```
 
 ---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
@@ -245,11 +312,6 @@ DES y AES son ejemplos de cifrado por bloques
 
 ---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
-### Padding y modos
-
-- ECB
-- CBC
-- ...
 
 ---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
@@ -265,19 +327,9 @@ con $n=25$ el resultado es $300$
 
 ### Diffie-Hellman
 
----?image=assets/img/dh.png
-
----?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
-
-### Asymetric Cryptography
-
-- Uno de los inventos (que no descubrimiento) del S.XX
-
+Es un modelo matemático basado en funciones trampa, funciones que son muy sencillas de realizar pero muy complicadas de deshacer: exponenciación modular, factorización de primos,…
 +++
-
-Es un sistema de cifrado basado en funciones trampa, funciones que son muy sencillas de realizar pero muy complicadas de deshacer: exponenciación modular, factorización de primos,…
-+++
-Aunque teoricamente conocidas hasta que Diffie W. y M. Hellman inventaron el algoritmo que permitía el intercambio de claves.
+Aunque teoricamente conocidas no fué hasta que Diffie W. y M. Hellman inventaron el algoritmo que permitía el intercambio de claves que se hicieron realidad.
 +++
 Posteriormente se han inventado otros algoritmos algunos de los cuales sí que permiten firma o cifrado asimético: RSA, DSS, El Gamal,..
 +++
@@ -397,7 +449,7 @@ Por ejemplo con un RSA de 1024 bits tenemos que hacer una factorización de un n
 # @fa[book fa-2x text-black]
 @snapend
 
-@snap[south-east span-40 h2-black]
+@snap[south-east span-60 h2-black]
 ### Formatos
 ### Estándares 
 ### Normas
@@ -486,7 +538,34 @@ La firma electrónica es uno de los ejemplos más claros de este problema: tenem
 - Una reglas comunes para transmitirnos esta información.
 - Los sistemas podrán luego traducir estos formatos a sus necesidades propias.
 
+---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 
+@title[Title + Concise List]
+
+@snap[north-west]
+## Lo mínimo imprescindible
+#### para mantener el tipo
+@snapend
+
+@snap[south-west list-content-concise span-100]
+
+@ol[list-bullets-black](false)
+- ASN.1 y BASE64
+- PKCS, CAdES, padding, X.509
+- XMLDSIG, XAdES
+- OASIS WS-Security SAML
+- Kerberos
+- JWT, JWE, JOSE
+- OAUTH, OpenId, SSO
+- TLS
+@olend
+<br><br>
+@snapend
+
+Note:
+Algunos estándares (10 años atrás)
+
+@css[text-02](CAdES CMS Advanced Electronic Signatures. ETSI TS 101 733 CAdES version 1.7.4 from Jul, 2008, XAdES XML Advanced Electronic Signatures. ETSI TS 101 903 XAdES version 1.4.1 from 2009-06-15, PAdES PDF Advanced Electronic Signatures. ETSI TS 102778, RFC 2560 “Online Certificate Status Protocol – OCSP”, RFC 3126 “Electronic Signature Formats for long term electronic signatures”, RFC 2630 ”Cryptographic Message Syntax”,RFC 2634 ”Enhanced Security Services for S/MIME”, RFC 5126 “CMS Advanced Electronic Signatures CAdES”,RFC 3280 ”Certificate and Certificate Revocation List CRL Profile”,RFC 3275  “Extensible Markup Language XML-Signature Syntax and Processing ”, RFC 2797  “Certificate Management Messages over CMS”,RFC 2585  “Operational Protocols: FTP and HTTP”, RFC 3161  “Time-Stamp Protocol TSP”, RFC 3029 “Data Validation and Certification Server Protocols”, RFC 3852  “Cryptographic Message Syntax” deja obsoletos los RFC3369, RFC 3211, RFC 2630, RFC 2315-PKCS #7 version 1.5-, RFC 4853 - Actualización Marzo 2008 “Cryptographic Message Syntax – Multiple Signer Clarification”, CWA 15579  E-invoices and digital signatures, ETSI TS 102 042 Policy requirements for CA issuing PKC, ETSI TS 102 023 Policy Requirements for Time Stamping Authorities Certificates for Electronic Signatures – Part 1: System Security Requirements, ETSI TS 102 231 Provision of harmonized Trust Service Provider status information TSL, ETSI TS 102 280 X.509 V.3 Certificate Profile for Certificates Issued to Natural Persons, ETSI TS 102 158 Policy requirements for Certification Service Providers issuing attribute certificates usable with Qualified certificates, ETSI TS 101 861 V1.2.1  Time stamping profile, CEN / ISSS CWA 14167-2 Cryptographic module for CSP signing operations with backup – Protection profile – CMCSOB PP, CEN / ISSS CWA 14167-3 Cryptographic module for CSP key generation services protection profile CMCKG-PP, CEN / ISSS CWA 14167-4 Cryptographic module for CSP signing operations – Protection profile – CMCSO PP, CEN / ISSS CWA 14169 Secure signature-creation devices “EAL 4+”, CEN / ISSS CWA 14170 Security requirements for signature creation applications, CEN / ISSS CWA 14171 General Guidelines for Electronic Signature Verification, CEN / ISSS CWA 14172 EESSI Conformity Assessment Guidance 8 parts, CEN / ISSS CWA 14355 Guidelines for the implementation of Secure Signature-Creation Devices, CEN / ISSS CWA 14365-1 Guide on the Use of Electronic Signatures – Part 1: Legal and Technical Aspects, CEN / ISSS CWA 14365-2 Guide on the Use of Electronic Signatures – Part 2: Protection Profile for Software Signature Creation Devices, CEN / ISSS CWA 14167-1 Security Requirements for Trustworthy Systems Managing, CEN / ISSS CWA 14890-1 Application Interface for smart cards used as Secure Signature Creation Devices – Part 1: Basic requirements, CEN / ISSS CWA 14890-2 Application Interface for smart cards used as Secure Signature Creation Devices – Part 2: Additional Services, TR 102 047 International Harmonization of Electronic Signature Formats FIPS PUB 180-1 Secure Hash Standard, ISO 32000,……..)
 ---?color=linear-gradient(to top right, #5BE7C4 50%, white 50.2%)
 
 @snap[south-west span-40 h2-black]
@@ -506,6 +585,10 @@ La firma electrónica es uno de los ejemplos más claros de este problema: tenem
 
 - Este estándar no define cómo se han de codificar esos datos, sino que es una sintaxis abstracta para indicar el significado de los datos.
 
+---
+```
+openssl asn1parse
+```
 ---
 ## DER, BER, CER,…
 Como se ha indicado, ASN.1 no define cómo se han de codificar los datos.
@@ -566,6 +649,34 @@ Más sobre ASN.1 en
 Más sobre Base 64 en
 http://www.aardwulf.com/tutor/base64/base64.pdf
 
+---
+
+##### 1.Una operación cuyo resultado es binario:
+```
+> openssl dgst -sha1 -binary <<< 'Eurobits Technologies'
+��Ť�������1�Y��g%
+``` 
+##### 2.Ese resultado binario representado en base 64
+```
+> openssl dgst -sha1 -binary <<< 'Eurobits Technologies' | openssl base64 -e
+l8zFpB+3o4CaloDhMfpZBweotmc=
+```
+
+##### 3.No te confundas con representar el valor binario en hexadecimal
+```
+> openssl dgst -sha1 <<< 'Eurobits Technologies'
+97ccc5a41fb7a3809a9680e131fa590707a8b667
+```
+
+_Lo correcto es usar la representación Base64 del valor binario (2)_
+
+---?color=linear-gradient(to top right, #5BE7C4 50%, white 50.2%)
+
+### Padding y modos
+
+- ECB
+- CBC
+- PKCS1
 
 ---?color=linear-gradient(to top right, #5BE7C4 50%, white 50.2%)
 
@@ -598,14 +709,6 @@ DSS
 @snap[north-east span-40]
 # @fa[laptop-code fa-2x text-black]
 @snapend
-
----
-
-Estandarización
-
-Algunos estándares (10 años atrás)
-
-@css[text-02](CAdES CMS Advanced Electronic Signatures. ETSI TS 101 733 CAdES version 1.7.4 from Jul, 2008, XAdES XML Advanced Electronic Signatures. ETSI TS 101 903 XAdES version 1.4.1 from 2009-06-15, PAdES PDF Advanced Electronic Signatures. ETSI TS 102778, RFC 2560 “Online Certificate Status Protocol – OCSP”, RFC 3126 “Electronic Signature Formats for long term electronic signatures”, RFC 2630 ”Cryptographic Message Syntax”,RFC 2634 ”Enhanced Security Services for S/MIME”, RFC 5126 “CMS Advanced Electronic Signatures CAdES”,RFC 3280 ”Certificate and Certificate Revocation List CRL Profile”,RFC 3275  “Extensible Markup Language XML-Signature Syntax and Processing ”, RFC 2797  “Certificate Management Messages over CMS”,RFC 2585  “Operational Protocols: FTP and HTTP”, RFC 3161  “Time-Stamp Protocol TSP”, RFC 3029 “Data Validation and Certification Server Protocols”, RFC 3852  “Cryptographic Message Syntax” deja obsoletos los RFC3369, RFC 3211, RFC 2630, RFC 2315-PKCS #7 version 1.5-, RFC 4853 - Actualización Marzo 2008 “Cryptographic Message Syntax – Multiple Signer Clarification”, CWA 15579  E-invoices and digital signatures, ETSI TS 102 042 Policy requirements for CA issuing PKC, ETSI TS 102 023 Policy Requirements for Time Stamping Authorities Certificates for Electronic Signatures – Part 1: System Security Requirements, ETSI TS 102 231 Provision of harmonized Trust Service Provider status information TSL, ETSI TS 102 280 X.509 V.3 Certificate Profile for Certificates Issued to Natural Persons, ETSI TS 102 158 Policy requirements for Certification Service Providers issuing attribute certificates usable with Qualified certificates, ETSI TS 101 861 V1.2.1  Time stamping profile, CEN / ISSS CWA 14167-2 Cryptographic module for CSP signing operations with backup – Protection profile – CMCSOB PP, CEN / ISSS CWA 14167-3 Cryptographic module for CSP key generation services protection profile CMCKG-PP, CEN / ISSS CWA 14167-4 Cryptographic module for CSP signing operations – Protection profile – CMCSO PP, CEN / ISSS CWA 14169 Secure signature-creation devices “EAL 4+”, CEN / ISSS CWA 14170 Security requirements for signature creation applications, CEN / ISSS CWA 14171 General Guidelines for Electronic Signature Verification, CEN / ISSS CWA 14172 EESSI Conformity Assessment Guidance 8 parts, CEN / ISSS CWA 14355 Guidelines for the implementation of Secure Signature-Creation Devices, CEN / ISSS CWA 14365-1 Guide on the Use of Electronic Signatures – Part 1: Legal and Technical Aspects, CEN / ISSS CWA 14365-2 Guide on the Use of Electronic Signatures – Part 2: Protection Profile for Software Signature Creation Devices, CEN / ISSS CWA 14167-1 Security Requirements for Trustworthy Systems Managing, CEN / ISSS CWA 14890-1 Application Interface for smart cards used as Secure Signature Creation Devices – Part 1: Basic requirements, CEN / ISSS CWA 14890-2 Application Interface for smart cards used as Secure Signature Creation Devices – Part 2: Additional Services, TR 102 047 International Harmonization of Electronic Signature Formats FIPS PUB 180-1 Secure Hash Standard, ISO 32000,……..)
 
 ---?color=linear-gradient(to top left, #bdc3c7, #2c3e50)
 

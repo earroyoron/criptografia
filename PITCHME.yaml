@@ -22,7 +22,7 @@ theme-override: assets/css/PITCHME.css
 # https://gitpitch.com/docs/settings/logo
 #
 logo : assets/img/eurobits.png
-logo-position : top-left
+logo-position : bottom-right
 
 #
 # Layout Setting
@@ -47,7 +47,7 @@ published : true
 # Doc: https://gitpitch.com/docs/settings/twitter-card
 #
 title : "Criptografía para desarrolladores"
-description : "Los trucos y detalles de la criptografía moderna para desarrolladores de software."
+description : "Los conceptos imprescindibles de la criptografía moderna para desarrolladores de software."
 thumbnail : https://gitpitch.com/gpimg/tutorial-thumb.png
 
 mathjax : TeX-MML-AM_HTMLorMML-full
